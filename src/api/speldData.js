@@ -1,18 +1,19 @@
-const speldData = [
+export const speldData = [
     {
       id: 1,
       name: 'wegslepen',
       date: '',
       author: '',
+      category: '',
       img: '',
       title: '"Pak vaker de fiets!", zegt gemeente die elke dag een voetbalveld aan foutgeparkeerde fietsen laat verdwijnen',
       subtitle: '',
-      text: "Mensen zouden vaker de auto moeten laten staan en op de fiets naar hun werk of het station gaan. Dat vinden gemeenten die dagelijks vrachtwagens vol fietsen laten afvoeren omdat ze een paar centimeter naast een vol rek zijn geparkeerd.\n" +
-        "\n" +
-        "“Fietsen is veel beter voor het klimaat”, zegt een woordvoerder van de gemeente Rotterdam, waar rond het Centraal Station iedere dag een voetbalveld aan foutgeparkeerde fietsen verdwijnt. Ook Amsterdam moedigt inwoners aan om vaker te kiezen voor de fiets, die wordt losgeknipt en afgevoerd als hij ook maar eventjes buiten een rek of vak staat.\n" +
-        "\n" +
-        "\n" +
-        "De gemeente Amersfoort gaat nog een stapje verder. Daar worden inwoners niet alleen aangespoord om zich fietsend naar het station te begeven op weg naar hun werk, maar ook om in hun vrije tijd lopend naar het fietsdepot te gaan in de hoop hun verwijderde fiets terug te vinden. “Zo dragen we allemaal een steentje bij aan de strijd tegen klimaatverandering.””,
+      text: `Mensen zouden vaker de auto moeten laten staan en op de fiets naar hun werk of het station gaan. Dat vinden gemeenten die dagelijks vrachtwagens vol fietsen laten afvoeren omdat ze een paar centimeter naast een vol rek zijn geparkeerd.
+
+“Fietsen is veel beter voor het klimaat”, zegt een woordvoerder van de gemeente Rotterdam, waar rond het Centraal Station iedere dag een voetbalveld aan foutgeparkeerde fietsen verdwijnt. Ook Amsterdam moedigt inwoners aan om vaker te kiezen voor de fiets, die wordt losgeknipt en afgevoerd als hij ook maar eventjes buiten een rek of vak staat.
+
+
+De gemeente Amersfoort gaat nog een stapje verder. Daar worden inwoners niet alleen aangespoord om zich fietsend naar het station te begeven op weg naar hun werk, maar ook om in hun vrije tijd lopend naar het fietsdepot te gaan in de hoop hun verwijderde fiets terug te vinden. “Zo dragen we allemaal een steentje bij aan de strijd tegen klimaatverandering.””,`
   },
 
   {
@@ -20,6 +21,7 @@ const speldData = [
     name: 'pannenkoeken',
     date: '',
     author: '',
+    category: '',
     img: '',
     title: "Bij deze pannenkoekenmix hoef je alleen maar alle ingrediënten voor pannenkoeken toe te voegen",
     subtitle: "",
@@ -31,6 +33,7 @@ const speldData = [
     name: "vaderdochter",
     date: '',
     author: '',
+    category: '',
     img: '',
     title: 'Millennial-vader leest dochter sprookje voor over mensen met koophuizen en vaste contracten',
     subtitle: '',
@@ -42,6 +45,7 @@ const speldData = [
     name: 'contractgestoord',
     date: '',
     author: '',
+    category: '',
     img: '',
     title: 'Zzp\'er Reinier is een beetje contractgestoord',
     subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
@@ -55,6 +59,7 @@ const speldData = [
     name: 'awareness',
     date: '',
     author: '',
+    category: '',
     img: '',
     title: 'aware',
     subtitle: '',
@@ -71,7 +76,8 @@ const speldData = [
     name: 'telefoonbetalen',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/telefoonbetale.jpg',
     title: 'ING financiert corrupt project Angola, maar je kan wel heel chill met je telefoon betalen',
     subtitle: '',
     text: 'Uit een onderzoek van het FD en Trouw blijkt dat de ING Bank 400 miljoen dollar heeft geleend aan de Angolese staat voor een project waarbij drieduizend families uit hun woningen zijn verjaagd. Niet goed, maar wat wel chill is, is dat je bij de ING gewoon met je telefoon kunt betalen zonder vervelend apparaatje. Je hoeft alleen maar een zelfgekozen code in te vullen.\n' +
@@ -84,7 +90,8 @@ const speldData = [
     name: 'kroeg-dj',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/kroeg-dj.png',
     title: 'Ongelofelijk multitalent werkt niet alleen in een bar maar is ook dj',
     subtitle: '',
     text: 'Zo, nu hebben we er toch een gevonden: een jongen die niet alleen in een bar werkt, maar die ook nog eens dj is! Dit multitalent kan het allemaal en weet het ook nog eens te combineren: in een bar werken, muziek draaien. Heeft een dag voor hem dan meer dan 24 uur? \n' +
@@ -97,7 +104,8 @@ const speldData = [
     name: 'telefoon-kijken',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/telefoonkijken.jpg',
     title: 'De 89e keer dat Yara deze ochtend op haar telefoon kijkt is het precies 11:11',
     subtitle: '',
     text: 'Een bijzondere gebeurtenis voor de 27-jarige Yara. Toen ze deze ochtend voor de 89e keer op haar telefoon keek, was het precies 11.11 uur. Dit is een teken, weet ze.\n' +
@@ -113,7 +121,8 @@ const speldData = [
     name: 'notitieblokje',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/notitieblok.jpg',
     title: 'Inspirerende notitieboekjes waarin je alleen op de eerste drie pagina\'s gaat schrijven',
     subtitle: 'Notitieboekjes: je hebt er nooit genoeg. Zodra het enthousiasme waarmee je de eerste bladzijden vol schreef wegvaagt, kun je datzelfde boekje natuurlijk niet meer gebruiken. Een nieuwe is dus een must. Wij hebben de leukste nieuwe lege boekjes voor je op een rij gezet.',
     text: 'Notitieboekjes: je hebt er nooit genoeg. Zodra het enthousiasme waarmee je de eerste bladzijden vol schreef wegvaagt, kun je datzelfde boekje natuurlijk niet meer gebruiken. Een nieuwe is dus een must. Wij hebben de leukste nieuwe lege boekjes voor je op een rij gezet.\n' +
@@ -140,7 +149,7 @@ const speldData = [
     name: 'baudet',
     date: '',
     author: '',
-    img: '',
+    img: '../assets/images/baudet.png',
     title: 'Baudet: "Canada haalde toestel neer"',
     subtitle: 'Niet Iran, maar Canada heeft het Oekraiense toestel bij Teheran uit de lucht geschoten.',
     text: 'Niet Iran, maar Canada heeft het Oekraïense toestel bij Teheran uit de lucht geschoten. Die conclusie trekt Forum voor Democratie-leider Thierry Baudet na het analyseren van zijn eigen hersenkronkels. Baudet heeft een brief aan de Oekraïense president Zelensky ondertekend met het verzoek deze mogelijkheid te onderzoeken.'
@@ -151,7 +160,8 @@ const speldData = [
     name: 'museumjaarkaart',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/museumkaart.png',
     title: 'Met de museumkaart kun je een jaar lang onbeperkt zeggen dat je een museumkaart hebt',
     subtitle: '',
     text: 'Vind jij het vervelend om in een museum een kaartje te moeten kopen? Vind je het leuk om tegen kennissen te zeggen dat je een museumkaart bezit? Dan is de museumkaart iets voor jou. Voor maar 65 euro kun jij een jaar lang onbeperkt zeggen dat je een museumkaart hebt.\n' +
@@ -164,7 +174,8 @@ const speldData = [
     name: 'maandag-kantoor',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/kantoor.png',
     title: 'Tom Dumoulin gaat elke maandagochtend eerst een uurtje naar kantoor',
     subtitle: '"je voelt je de rest van de week beter"',
     text: 'Het is vaste prik in huize Dumoulin: elke maandagochtend om stipt zeven uur gaat de beroepsrenner niet naar zijn werk, maar gaat hij eerst een uur naar kantoor. Om zijn hoofd leeg te maken, en daarna fris te zijn voor een nieuwe week. Geen maandag slaat-ie over.\n' +
@@ -177,7 +188,8 @@ const speldData = [
     name: 'tussenjaar',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/tussenjaar.png',
     title: 'Komt door klimaatverandering het tussenjaar in gevaar?',
     subtitle: '',
     text: 'Bosbranden in Australië en Zuid-Amerika. Overstromingen in Indonesië. Wateroorlogen in Thailand. Extreme droogte in Zuid-Afrika. Het roept de prangende vraag op: komt door klimaatverandering ons tussenjaar in gevaar?\n' +
@@ -195,8 +207,9 @@ const speldData = [
     name: 'boomplanten',
     date: '',
     author: '',
-    img: 'Hovenier Ludo maakt een vliegreis elke keer dat ie een boom plant',
-    title: '',
+    category: '',
+    img: '../assets/images/boomplanten.jpg',
+    title: 'Hovenier Ludo maakt een vliegreis elke keer dat ie een boom plant',
     subtitle: '"ik plant volledig klimaatneutraal"',
     text: 'De 41-jarige Ludo plant heel veel bomen, maar hij compenseert dat wel. Elke keer dat ie een boom de grond in stopt, boekt ie ook een vliegreis.\n' +
       '\n' +
@@ -208,7 +221,8 @@ const speldData = [
     name: 'klasgenoot',
     date: '',
     author: '',
-    img: '',
+    category: '',
+    img: '../assets/images/klasgenoot.png',
     title: 'Klasgenoot van vroeger hoeft geen verjaardagscadeau, alleen jouw geld voor kinderkanker',
     subtitle: '',
     text: 'Ooit zaten jullie naast elkaar bij Engels. Inmiddels heb je Janine al vijftien jaar niet gezien. Maar trouwe Facebookvrienden zijn jullie wel. En nu strijdt Janine ineens tegen kinderkanker, van jouw geld.\n' +
