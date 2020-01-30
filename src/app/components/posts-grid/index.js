@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Post from '../post-item/index';
+import PostItem from '../post-item/index';
 
 class PostsGrid extends Component {
 
@@ -12,7 +12,7 @@ class PostsGrid extends Component {
         {
 
           this.props.posts.map( post => {
-            return <Post post={post} />
+            return <PostItem key={`${post.id}-${post.name}`} post={post}/>
           })
 
         }
@@ -30,5 +30,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(PostsGrid);
-
-// lifecycle methods voor je render, alle zelfgemaakte functies eronder

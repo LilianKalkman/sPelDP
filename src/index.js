@@ -5,6 +5,7 @@ import App from './app/app';
 import * as serviceWorker from './serviceWorker';
 import { createStore, compose, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import postsReducer from './app/store/reducers/posts';
 import usersReducer from './app/store/reducers/users'
@@ -21,7 +22,13 @@ const store = createStore(rootReducer, composeEnhancers());
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={App} />
+        <Route path="/posts" component={App} />
+        <Route path="/:postId" component={App} />
+      </Switch>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root'));
 
@@ -29,3 +36,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
