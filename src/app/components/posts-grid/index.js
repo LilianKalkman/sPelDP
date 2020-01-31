@@ -6,9 +6,7 @@ class PostsGrid extends Component {
 
   render() {
     return (
-      <div>
-        Posts Grid:
-
+      <div className="posts-grid">
         {
 
           this.props.posts.map( post => {
@@ -30,3 +28,6 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(PostsGrid);
+
+
+//geef classname mee (1 - 15); die neemt styling over.

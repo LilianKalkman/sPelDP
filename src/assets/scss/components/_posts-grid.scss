@@ -1,0 +1,131 @@
+// css grid layout for posts overview
+
+$grid-gutter: 5px;
+
+.posts-grid {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 24% 1%);
+  grid-template-rows: repeat(6, 150px $grid-gutter);
+
+  .grid-item-1 {
+    background-color: $grey-dark;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .grid-item-2 {
+    background-color: $grey-light;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .grid-item-3 {
+    background-color: $grey-medium;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .grid-item-4 {
+    background-color: $white-smoke;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+  .grid-item-5 {
+    background-color: $white;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .grid-item-6 {
+    background-color: $grey-medium;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .grid-item-7 {
+    background-color: $grey-light;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .grid-item-8 {
+    background-color: $white-smoke;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .grid-item-9 {
+    background-color: $grey-medium;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .grid-item-10 {
+    background-color: $grey-medium;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .grid-item-11 {
+    background-color: $grey-light;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+
+  .grid-item-12 {
+    background-color: $grey-dark;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+
+  .grid-item-13 {
+    background-color: $grey-light;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 12;
+  }
+
+  .grid-item-14 {
+    background-color: $white-smoke;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+
+  .grid-item-15 {
+    background-color: $grey-dark;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+
+}
