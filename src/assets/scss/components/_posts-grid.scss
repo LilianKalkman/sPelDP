@@ -2,11 +2,18 @@
 
 $grid-gutter: 5px;
 
+.grid-item--mask {
+  width: 100%;
+  height: 100%;
+  background: $gradient-grey;
+  opacity: 0.8;
+}
+
 .posts-grid {
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(4, 24% 1%);
-  grid-template-rows: repeat(6, 150px $grid-gutter);
+  grid-template-rows: repeat(6, 20vh $grid-gutter);
 
   .grid-item-1 {
     background-color: $grey-dark;

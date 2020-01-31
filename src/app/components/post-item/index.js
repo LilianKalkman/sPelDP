@@ -7,13 +7,13 @@ class PostItem extends Component {
     const imagePath = process.env.PUBLIC_URL + '/images/' + this.props.post.img;
     const imageStyle = {
       backgroundImage: `url(${imagePath})`,
-      opacity: 0.6,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
     }
 
     return (
       <div onClick={this.renderFullText} className={`grid-item-${this.props.post.id}`} style={imageStyle}>
+        <div className="grid-item--mask"></div>
         <Link to={`/posts/${this.props.post.id}`}>
           {this.props.post.name}
         </Link>
