@@ -7,3 +7,27 @@
   opacity: 0.8;
 }
 
+.grid-item {
+  box-shadow: $box-shadow;
+
+  .post-title {
+    color: $white;
+    z-index: 20;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  transition: background 5s ease-in;
+
+  .grid-item--mask {
+    background: $gradient-green;
+  }
+
+  .grid-item--stripe {
+    display: none;
+  }
+}
+
