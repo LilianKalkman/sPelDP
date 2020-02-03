@@ -1,138 +1,80 @@
 // css grid layout for posts overview
 
-$grid-gutter: 5px;
+$grid-gutter: 0.5rem;
+$grid-columns-width: calc((100% - (0.5rem * 3)) / 4);
+$grid-rows-height: calc((100vh - (0.5rem * 5)) / 6);
 
 .grid-item--mask {
+  background: $gradient-grey;
   width: 100%;
   height: 100%;
-  background: $gradient-grey;
   opacity: 0.8;
 }
 
 .posts-grid {
-  margin: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 24% 1%);
-  grid-template-rows: repeat(6, 20vh $grid-gutter);
+  grid-template-columns: repeat(4, $grid-columns-width $grid-gutter);
+  grid-template-rows: repeat(6, $grid-rows-height $grid-gutter);
+  margin: 0.7rem (0.7rem - $grid-gutter) 0.7rem 0.7rem;
 
   .grid-item-1 {
-    background-color: $grey-dark;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-area: 1 / 1 / 2 / 4;
   }
 
   .grid-item-2 {
-    background-color: $grey-light;
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-area: 1 / 5 / 4 / 6;
   }
 
   .grid-item-3 {
-    background-color: $grey-medium;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-area: 1 / 7 / 2 / 8;
   }
 
   .grid-item-4 {
-    background-color: $white-smoke;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-area: 3 / 1 / 6 / 4;
   }
 
   .grid-item-5 {
-    background-color: $white;
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-area: 5 / 5 / 6 / 6;
   }
 
   .grid-item-6 {
-    background-color: $grey-medium;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-area: 3 / 7 / 4 / 8;
   }
 
   .grid-item-7 {
-    background-color: $grey-light;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-area: 5 / 7 / 6 / 8;
   }
 
   .grid-item-8 {
-    background-color: $white-smoke;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-area: 7 / 1 / 8 / 2;
   }
 
   .grid-item-9 {
-    background-color: $grey-medium;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-area: 7 / 3 / 8 / 6;
   }
 
   .grid-item-10 {
-    background-color: $grey-medium;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-area: 7 / 7 / 8 / 8;
   }
 
   .grid-item-11 {
-    background-color: $grey-light;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    grid-area: 9 / 1 / 10 / 2;
   }
 
   .grid-item-12 {
-    background-color: $grey-dark;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    grid-area: 9 / 3 / 10 / 6;
   }
 
   .grid-item-13 {
-    background-color: $grey-light;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start: 9;
-    grid-row-end: 12;
+    grid-area: 9 / 7 / 12 / 8;
   }
 
   .grid-item-14 {
-    background-color: $white-smoke;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 11;
-    grid-row-end: 12;
+    grid-area: 11 / 1 / 12 / 4;
   }
 
   .grid-item-15 {
-    background-color: $grey-dark;
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 11;
-    grid-row-end: 12;
+    grid-area: 11 / 5 / 12 / 6;
   }
 
 }
