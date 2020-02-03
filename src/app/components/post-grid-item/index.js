@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
-class PostItem extends Component {
+class PostGridItem extends Component {
 
   render(){
     const imagePath = process.env.PUBLIC_URL + '/images/' + this.props.post.img;
@@ -32,4 +32,4 @@ class PostItem extends Component {
   }
 }
 
-export default PostItem;
+export default PostGridItem;

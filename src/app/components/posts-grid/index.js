@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PostItem from '../post-item/index';
+import PostGridItem from '../post-grid-item/index';
 
 class PostsGrid extends Component {
 
@@ -10,7 +10,7 @@ class PostsGrid extends Component {
         {
 
           this.props.posts.map( post => {
-            return <PostItem key={`${post.id}-${post.name}`} post={post}/>
+            return <PostGridItem key={`${post.id}-${post.name}`} post={post}/>
           })
 
         }
