@@ -19,7 +19,7 @@ class PostItem extends Component {
         <div className="grid-item--mask"></div>
         <div className="grid-item--stripe"></div>
         <div className="post-title">
-          <Link to={`/posts/${this.props.post.id}`}>
+          <Link to={`/posts/${this.props.post.id}`} className="post-title__link">
             {this.props.post.name}
           </Link>
         </div>
