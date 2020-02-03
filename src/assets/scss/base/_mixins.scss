@@ -1,0 +1,41 @@
+//mixins
+
+@mixin stripe-top {
+  background: $gradient-green;
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 10;
+}
+
+@mixin stripe-right {
+  background: $gradient-green;
+  position: absolute;
+  top: 0;
+  left: 85%;
+  width: 0.2rem;
+  height: 100%;
+  z-index: 10;
+}
+
+@mixin stripe-bottom {
+  background: $gradient-green;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  z-index: 10;
+}
+
+@mixin stripe-left {
+  background: $gradient-green;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 0.2rem;
+  height: 100%;
+  z-index: 10;
+}

@@ -17,6 +17,7 @@ class PostItem extends Component {
     return (
       <div onClick={this.renderFullText} className={itemClasses} style={imageStyle}>
         <div className="grid-item--mask"></div>
+        <div className="grid-item--stripe"></div>
         <div className="post-title">
           <Link to={`/posts/${this.props.post.id}`}>
             {this.props.post.name}
@@ -25,7 +26,6 @@ class PostItem extends Component {
       </div>
     )
   }
-
 
   renderFullText(){
     return alert('test')
