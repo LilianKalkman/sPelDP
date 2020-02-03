@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 
 class PostItem extends Component {
 
@@ -11,12 +12,16 @@ class PostItem extends Component {
       backgroundSize: 'cover',
     }
 
+    const itemClasses = classNames('grid-item', `grid-item-${this.props.post.id}`)
+
     return (
-      <div onClick={this.renderFullText} className={`grid-item-${this.props.post.id}`} style={imageStyle}>
+      <div onClick={this.renderFullText} className={itemClasses} style={imageStyle}>
         <div className="grid-item--mask"></div>
-        <Link to={`/posts/${this.props.post.id}`}>
-          {this.props.post.name}
-        </Link>
+        <div className="post-title">
+          <Link to={`/posts/${this.props.post.id}`}>
+            {this.props.post.name}
+          </Link>
+        </div>
       </div>
     )
   }
