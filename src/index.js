@@ -25,7 +25,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" component={App} />
-        <Route path="/posts" component={App} />
+        <Route path="/:category/posts" component={App} />
         <Route path="/:postId" component={App} />
       </Switch>
     </BrowserRouter>
