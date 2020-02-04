@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { FaAngleDoubleDown, FaSearch } from 'react-icons/fa';
 
 class Header extends Component {
@@ -8,15 +9,22 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="nav-bar">
-          <NavLink
-            to="/speld/posts"
-            activeClassName="active"
-            className="nav-item">
-            Speld <FaAngleDoubleDown className="nav-icon"/>
-          </NavLink>
-          <NavLink to="/test/posts" className="nav-item">
-            Test <FaAngleDoubleDown className="nav-icon"/>
-          </NavLink>
+          {
+            this.props.categories.map( category => {
+              return (
+                <NavLink
+                  to={`/${category.category}/posts`}
+                  activeClassName="active"
+                  className="nav-item"
+                  key={`${category.category}`}
+                >
+                  { category.category }
+                  <FaAngleDoubleDown className="nav-icon"/>
+              </NavLink>
+              )
+
+            })
+          }
         </div>
         <div className="search-bar">
           <input type="text" className="input" placeholder="Search..." />
@@ -27,5 +35,12 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    categories: state.categories
+  }
+}
+
+export default connect(mapStateToProps)(Header);
+
 
