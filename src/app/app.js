@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PostsGrid from './components/posts-grid';
-import Header from './components/header'
+import Header from './components/header';
 import "../assets/scss/style.scss";
+import { setPosts } from './store/actions/action_creators';
 
 class App extends Component {
 
@@ -12,6 +13,10 @@ class App extends Component {
       color: 'green'
     }
   };
+
+  componentDidMount () {
+    // this.props.setPosts('')
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
@@ -23,7 +28,7 @@ class App extends Component {
     return (
       <div className={`${this.state.category.color}`}>
         <Header />
-        <PostsGrid />
+        <PostsGrid category={this.state.category.category} />
       </div>
     );
   }
@@ -33,6 +38,7 @@ class App extends Component {
       return path.includes(cat.category);
     })
     this.setState(({category}))
+    this.props.setPosts(category)
   }
 }
 
@@ -42,4 +48,10 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(App);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    setPosts: (category) => dispatch(setPosts(category))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
