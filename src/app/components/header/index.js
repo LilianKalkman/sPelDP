@@ -32,11 +32,25 @@ class Header extends Component {
           }
         </div>
         <div className="search-bar">
-          <input type="text" className="input" value={this.state.inputValue} placeholder="Search..." onChange={(e) => this.setState({ inputValue: e.target.value})}/>
+          <input
+            type="text"
+            className="input"
+            value={this.state.inputValue}
+            placeholder="Search..."
+            onChange={(e) => this.setState({ inputValue: e.target.value})}
+            onKeyDown={this.keyPressed}
+          />
           <FaSearch className="nav-icon" onClick={() => this.props.search(this.state.inputValue)} />
         </div>
       </div>
     )
+  }
+
+  keyPressed = (event) => {
+    if(event.key !== 'Enter'){
+      return
+    }
+    this.props.search(this.state.inputValue)
   }
 }
 
