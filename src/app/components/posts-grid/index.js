@@ -11,7 +11,7 @@ class PostsGrid extends Component {
         {
 
           this.props.posts.map( post => {
-            return <PostGridItem key={`${post.id}-${post.name}`} post={post}/>
+            return <PostGridItem key={`${post.id}-${post.name}`} post={post} category={this.props.category}/>
           })
 
         }
