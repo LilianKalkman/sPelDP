@@ -7,6 +7,7 @@ class PostsGrid extends Component {
   render() {
     return (
       <div className="posts-grid">
+
         {
 
           this.props.posts.map( post => {
@@ -15,7 +16,6 @@ class PostsGrid extends Component {
 
         }
 
-
       </div>
     )
   }
@@ -23,7 +23,7 @@ class PostsGrid extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    posts: state.posts
+    posts: state.posts.filteredPosts
   }
 }
 

@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { FaAngleDoubleDown, FaSearch } from 'react-icons/fa';
+import { filterPosts } from '../../store/actions/action_creators'
 
 class Header extends Component {
+
+  state = {
+    inputValue: ''
+  }
 
   render(){
     return (
@@ -27,8 +32,8 @@ class Header extends Component {
           }
         </div>
         <div className="search-bar">
-          <input type="text" className="input" placeholder="Search..." />
-          <FaSearch className="nav-icon"/>
+          <input type="text" className="input" value={this.state.inputValue} placeholder="Search..." onChange={(e) => this.setState({ inputValue: e.target.value})}/>
+          <FaSearch className="nav-icon" onClick={() => this.props.search(this.state.inputValue)} />
         </div>
       </div>
     )
@@ -41,6 +46,12 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    search: (query) => dispatch(filterPosts(query)),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
 
 
