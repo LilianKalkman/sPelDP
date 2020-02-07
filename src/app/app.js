@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PostsGrid from './components/posts-grid';
 import Header from './components/header';
 import "../assets/scss/style.scss";
-import { setPosts } from './store/actions/action_creators';
+import { fetchPosts } from './store/actions/action_creators';
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   componentDidMount () {
-    // this.props.setPosts('')
+    this.props.getPosts(this.state.category)
   }
 
   componentDidUpdate(prevProps) {
@@ -38,7 +38,7 @@ class App extends Component {
       return path.includes(cat.category);
     })
     this.setState(({category}))
-    this.props.setPosts(category)
+    this.props.getPosts(category)
   }
 }
 
@@ -50,7 +50,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setPosts: (category) => dispatch(setPosts(category))
+    getPosts: (category) => dispatch(fetchPosts(category))
   }
 }
 

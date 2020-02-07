@@ -2,8 +2,8 @@ import { speldData } from '../../../api/speldData';
 import { FILTER_POSTS, SET_POSTS } from '../actions/action_creators'
 
 const initialState = {
-  allPosts: speldData,
-  filteredPosts: speldData,
+  allPosts: [],
+  filteredPosts: [],
 };
 
 const postsReducer = (state = initialState, action) => {
@@ -28,15 +28,9 @@ const postsReducer = (state = initialState, action) => {
 
     case SET_POSTS :
 
-      // nog naar kijken; structuur niet handig
-
-      const postsCategory = state.allPosts.filter( post => {
-        return post.category === action.category;
-      })
-
       return {
-        ...state,
-        allPosts: postsCategory,
+        allPosts: action.posts,
+        filteredPosts: action.posts,
       }
 
     default:
