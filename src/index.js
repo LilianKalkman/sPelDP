@@ -28,8 +28,8 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={App} />
-        <Route path="/:category/posts" component={App} />
+        <Route exact path="/" component={App} />
+        <Route exact path="/:category/posts" component={App} />
         <Route path="/:category/posts/:postId" component={OverviewPage} />
       </Switch>
     </BrowserRouter>
