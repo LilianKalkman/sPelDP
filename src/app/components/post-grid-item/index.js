@@ -15,7 +15,7 @@ class PostGridItem extends Component {
     const itemClasses = classNames('grid-item', `grid-item-${this.props.post.id}`)
 
     return (
-      <div onClick={this.renderFullText} className={itemClasses} style={imageStyle}>
+      <div className={itemClasses} style={imageStyle}>
         <div className="grid-item--mask"></div>
         <div className="grid-item--stripe"></div>
         <div className="post-title">
@@ -25,10 +25,6 @@ class PostGridItem extends Component {
         </div>
       </div>
     )
-  }
-
-  renderFullText(){
-    return alert('test')
   }
 }
 

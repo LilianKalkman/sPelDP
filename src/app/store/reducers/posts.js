@@ -1,4 +1,3 @@
-import { speldData } from '../../../api/speldData';
 import { FILTER_POSTS, SET_POSTS } from '../actions/action_creators'
 
 const initialState = {
