@@ -7,6 +7,7 @@ import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import OverviewPage from './app/views/item-overview';
 
 import postsReducer from './app/store/reducers/posts';
 import usersReducer from './app/store/reducers/users';
@@ -29,7 +30,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/" component={App} />
         <Route path="/:category/posts" component={App} />
-        <Route path="/:category/posts/:postId" component={App} />
+        <Route path="/:category/posts/:postId" component={OverviewPage} />
       </Switch>
     </BrowserRouter>
   </Provider>,
@@ -39,5 +40,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-
