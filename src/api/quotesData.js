@@ -50,6 +50,7 @@ export const quotesData = [
       '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
       'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
   },
+
   {
     id: 5,
     name: 'quote5',
@@ -63,9 +64,136 @@ export const quotesData = [
       '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
       'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
   },
+
   {
     id: 6,
     name: 'quote6',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 7,
+    name: 'quote7',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 8,
+    name: 'quote8',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 9,
+    name: 'quote9',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 10,
+    name: 'quote10',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 11,
+    name: 'quote11',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 12,
+    name: 'quote12',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 13,
+    name: 'quote13',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 14,
+    name: 'quote14',
+    date: '',
+    author: '',
+    category: 'quotes',
+    img: 'contractgestoord.jpg',
+    title: 'Zzp\'er Reinier is een beetje contractgestoord',
+    subtitle: 'Het is ontzettend moeilijk om een overeenkomst met hem af te sluiten',
+    text: 'Voor zijn zakelijke omgeving komt hij wat vreemd over. Reinier Overduin (31) heeft een aandoening waardoor hij een beetje contractgestoord is. Reinier is zzp’er.\n' +
+      '“Het is ontzettend moeilijk om een contract met hem te krijgen”, vertelt Hans, teamleider bij het bedrijf waar Reinier weleens een dagje aan het koffie drinken is. “Het lijkt wel alsof hij overeenkomsten afstoot, alsof hij daar bang voor is of iets dergelijks. Maar wij weten hoe we daarmee om moeten gaan. We moeten vooral niet doen alsof hij zielig is, omdat hij zzp’er is.”\n' +
+      'Door zijn beperking komt Reinier maar weinig in aanraking met sociale zekerheid. Hij krijgt hiervoor hulp, zodat hij zich kan redden in de maatschappij, maar helemaal normaal zal hij vermoedelijk nooit worden.',
+  },
+
+  {
+    id: 15,
+    name: 'quote15',
     date: '',
     author: '',
     category: 'quotes',
