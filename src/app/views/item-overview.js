@@ -15,7 +15,7 @@ class OverviewPage extends Component {
 
 
     return (
-      <div className={`${this.props.match.params.category}`}>
+      <div className={`${this.props.color}`}>
         <Header />
         <ItemOverview />
       </div>
@@ -25,7 +25,8 @@ class OverviewPage extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    post: state.posts.currentPost
+    post: state.posts.currentPost,
+    color: state.categories.currentCategory.color,
   }
 }
 
