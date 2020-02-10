@@ -35,7 +35,7 @@ const postsReducer = (state = initialState, action) => {
 
     case SET_CURRENT_POST :
 
-      const current = state.allPosts.find( post => post.id == action.id);
+      const current = state.allPosts.find( post => post.id === parseInt(action.id));
 
       return {
         ...state,

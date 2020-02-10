@@ -15,15 +15,16 @@ class PostGridItem extends Component {
     const itemClasses = classNames('grid-item', `grid-item-${this.props.post.id}`)
 
     return (
-      <div className={itemClasses} style={imageStyle}>
+      <Link to={`/${this.props.category}/posts/${this.props.post.id}`} className={itemClasses} style={imageStyle}>
+
         <div className="grid-item--mask"></div>
         <div className="grid-item--stripe"></div>
         <div className="post-title">
-          <Link to={`/${this.props.category}/posts/${this.props.post.id}`} className="post-title__link">
+          <div className="post-title__link">
             {this.props.post.name}
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
     )
   }
 }
