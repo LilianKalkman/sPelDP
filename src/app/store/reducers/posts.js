@@ -1,8 +1,9 @@
-import { FILTER_POSTS, SET_POSTS } from '../actions/action_creators'
+import { FILTER_POSTS, SET_POSTS, SET_CURRENT_POST } from '../actions/action_creators'
 
 const initialState = {
   allPosts: [],
   filteredPosts: [],
+  currentPost: {},
 };
 
 const postsReducer = (state = initialState, action) => {
@@ -30,6 +31,15 @@ const postsReducer = (state = initialState, action) => {
       return {
         allPosts: action.posts,
         filteredPosts: action.posts,
+      }
+
+    case SET_CURRENT_POST :
+
+      const current = state.allPosts.find( post => post.id == action.id);
+
+      return {
+        ...state,
+        currentPost: current,
       }
 
     default:
