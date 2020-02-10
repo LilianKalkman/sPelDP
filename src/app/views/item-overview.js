@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/header';
 import ItemOverview from '../components/item-overview';
-import { setCurrentPost } from '../store/actions/action_creators';
+import { setCurrentPost } from '../store/actions/posts';
 import { connect } from 'react-redux';
 
 class OverviewPage extends Component {
@@ -12,8 +12,10 @@ class OverviewPage extends Component {
   }
 
   render(){
+
+
     return (
-      <div className="item-overview-page">
+      <div className={`${this.props.match.params.category}`}>
         <Header />
         <ItemOverview />
       </div>

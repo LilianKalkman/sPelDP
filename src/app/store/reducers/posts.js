@@ -1,4 +1,4 @@
-import { FILTER_POSTS, SET_POSTS, SET_CURRENT_POST } from '../actions/action_creators'
+import { FILTER_POSTS, SET_POSTS, SET_CURRENT_POST } from '../actions/posts'
 
 const initialState = {
   allPosts: [],

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { FaAngleDoubleDown, FaSearch } from 'react-icons/fa';
-import { filterPosts } from '../../store/actions/action_creators'
+import { filterPosts } from '../../store/actions/posts';
 
 class Header extends Component {
 
@@ -56,13 +56,13 @@ class Header extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    categories: state.categories
+    categories: state.categories.categories
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    search: (query) => dispatch(filterPosts(query)),
+    search: (query) => dispatch(filterPosts(query))
   }
 }
 

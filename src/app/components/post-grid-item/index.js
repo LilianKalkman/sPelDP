@@ -16,7 +16,6 @@ class PostGridItem extends Component {
 
     return (
       <Link to={`/${this.props.category}/posts/${this.props.post.id}`} className={itemClasses} style={imageStyle}>
-
         <div className="grid-item--mask"></div>
         <div className="grid-item--stripe"></div>
         <div className="post-title">

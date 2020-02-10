@@ -1,20 +1,42 @@
-const initialState = [
-  {
-  category: 'speld',
-  color: 'green'
+import { SET_CURRENT_CATEGORY } from '../actions/categories';
+
+const initialState = {
+  categories: [
+    {
+      category: 'speld',
+      color: 'green'
+    },
+    {
+      category: 'test',
+      color: 'purple'
+    },
+    {
+      category: 'quotes',
+      color: 'orange'
+    }
+  ],
+
+  currentCategory: {
+    category: 'speld',
+    color: 'green'
   },
-  {
-    category: 'test',
-    color: 'purple'
-  },
-  {
-    category: 'quotes',
-    color: 'orange'
-  }
-  ];
+}
+  ;
 
 const categoriesReducer = (state = initialState, action) => {
-  return state;
+
+  switch (action.type) {
+
+    case SET_CURRENT_CATEGORY :
+
+      return {
+        ...state,
+        currentCategory: action.category
+      }
+
+    default :
+      return state;
+  }
 }
 
 export default categoriesReducer;

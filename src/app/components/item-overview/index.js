@@ -4,7 +4,9 @@ class ItemOverview extends Component {
 
   render(){
     return (
-      <div>Item Overview</div>
+      <div className="item-overview">
+        Item Overview
+      </div>
     )
   }
 }
