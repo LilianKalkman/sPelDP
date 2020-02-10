@@ -70,7 +70,7 @@ export const speldData = [
 
   {
     id: 6,
-    name: 'telefoonbetalen',
+    name: 'telefoon betalen',
     date: '',
     author: '',
     category: '',
@@ -98,7 +98,7 @@ export const speldData = [
 
   {
     id: 8,
-    name: 'telefoon-kijken',
+    name: 'telefoon kijken',
     date: '',
     author: '',
     category: '',
@@ -168,7 +168,7 @@ export const speldData = [
 
   {
     id: 12,
-    name: 'maandag-kantoor',
+    name: 'maandag kantoor',
     date: '',
     author: '',
     category: '',

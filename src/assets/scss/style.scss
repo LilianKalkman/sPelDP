@@ -1,5 +1,7 @@
 @import "base/colors";
 @import "base/base";
+@import "base/mixins";
 
 @import "components/header";
 @import "components/posts-grid";
+@import "components/post_item";
