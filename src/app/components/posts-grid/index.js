@@ -29,5 +29,3 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps)(PostsGrid);
 
-
-//geef classname mee (1 - 15); die neemt styling over.

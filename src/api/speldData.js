@@ -9,11 +9,8 @@ export const speldData = [
       title: '"Pak vaker de fiets!", zegt gemeente die elke dag een voetbalveld aan foutgeparkeerde fietsen laat verdwijnen',
       subtitle: '',
       text: `Mensen zouden vaker de auto moeten laten staan en op de fiets naar hun werk of het station gaan. Dat vinden gemeenten die dagelijks vrachtwagens vol fietsen laten afvoeren omdat ze een paar centimeter naast een vol rek zijn geparkeerd.
-
-“Fietsen is veel beter voor het klimaat”, zegt een woordvoerder van de gemeente Rotterdam, waar rond het Centraal Station iedere dag een voetbalveld aan foutgeparkeerde fietsen verdwijnt. Ook Amsterdam moedigt inwoners aan om vaker te kiezen voor de fiets, die wordt losgeknipt en afgevoerd als hij ook maar eventjes buiten een rek of vak staat.
-
-
-De gemeente Amersfoort gaat nog een stapje verder. Daar worden inwoners niet alleen aangespoord om zich fietsend naar het station te begeven op weg naar hun werk, maar ook om in hun vrije tijd lopend naar het fietsdepot te gaan in de hoop hun verwijderde fiets terug te vinden. “Zo dragen we allemaal een steentje bij aan de strijd tegen klimaatverandering.””,`
+            “Fietsen is veel beter voor het klimaat”, zegt een woordvoerder van de gemeente Rotterdam, waar rond het Centraal Station iedere dag een voetbalveld aan foutgeparkeerde fietsen verdwijnt. Ook Amsterdam moedigt inwoners aan om vaker te kiezen voor de fiets, die wordt losgeknipt en afgevoerd als hij ook maar eventjes buiten een rek of vak staat.
+            De gemeente Amersfoort gaat nog een stapje verder. Daar worden inwoners niet alleen aangespoord om zich fietsend naar het station te begeven op weg naar hun werk, maar ook om in hun vrije tijd lopend naar het fietsdepot te gaan in de hoop hun verwijderde fiets terug te vinden. “Zo dragen we allemaal een steentje bij aan de strijd tegen klimaatverandering.””,`
   },
 
   {

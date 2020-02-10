@@ -1,4 +1,4 @@
-// colors
+// colors and other variables
 
 $black: #000000;
 $grey-dark: #808080;
@@ -13,6 +13,7 @@ $medium-green: 	#3CB371;
 $light-green: 	#66CDAA;
 
 $gradient-green: linear-gradient(to bottom right, $dark-green, $light-green);
+$gradient-grey: linear-gradient(to bottom right, $grey-dark, $grey-medium);
 
 $box-shadow--dark:  0 8px 16px 0 rgba(0,0,0,0.16);
 $box-shadow:        0 8px 16px 0 rgba(0,0,0,0.08);
