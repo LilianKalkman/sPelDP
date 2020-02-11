@@ -9,17 +9,13 @@ import { setCurrentCategory } from './store/actions/categories'
 class App extends Component {
 
   componentDidMount () {
-    console.log(this.props.match.params.category, 'did mount');
-    this.props.setCategory(this.props.category);
-    this.props.getPosts(this.props.category)
+    this.props.getPosts(this.props.category);
   }
 
   componentDidUpdate(prevProps) {
-    console.log(this.props.match.params.category, 'did update');
-
     if (this.props.location !== prevProps.location) {
-      console.log('component did update')
-      this.switchCategory(this.props.location.pathname);
+      // console.log(this.props.match.params.category, 'did update');
+      this.switchCategory(this.props.match.params.category);
     }
   }
 
@@ -32,13 +28,12 @@ class App extends Component {
     );
   }
 
-  switchCategory(path){
-    console.log('in switch category')
-    const category = this.props.categories.find( cat => {
-      return path.includes(cat.category);
+  switchCategory(category){
+    const newCategory = this.props.categories.find( cat => {
+      return cat.category === category;
     })
-    this.props.setCategory(category)
-    this.props.getPosts(category)
+    this.props.setCategory(newCategory)
+    this.props.getPosts(newCategory)
   }
 }
 

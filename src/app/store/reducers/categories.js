@@ -20,8 +20,7 @@ const initialState = {
     category: 'speld',
     color: 'green'
   },
-}
-  ;
+};
 
 const categoriesReducer = (state = initialState, action) => {
 
