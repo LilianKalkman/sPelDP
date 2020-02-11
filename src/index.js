@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import OverviewPage from './app/views/item-overview';
 
 import postsReducer from './app/store/reducers/posts';
@@ -28,8 +28,10 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/:category/posts" component={App} />
+        <Route exact path="/" component={App}>
+          <Redirect to="/speld/posts" />
+        </Route>
+        <Route path="/:category/posts" component={App} />
         <Route path="/:category/posts/:postId" component={OverviewPage} />
       </Switch>
     </BrowserRouter>

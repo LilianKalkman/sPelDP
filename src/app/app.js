@@ -9,11 +9,13 @@ import { setCurrentCategory } from './store/actions/categories'
 class App extends Component {
 
   componentDidMount () {
-    this.props.setCategory(this.props.category)
+    console.log(this.props.match.params.category, 'did mount');
     this.props.getPosts(this.props.category)
   }
 
   componentDidUpdate(prevProps) {
+    console.log(this.props.match.params.category, 'did update');
+
     if (this.props.location !== prevProps.location) {
       console.log('component did update')
       this.switchCategory(this.props.location.pathname);
