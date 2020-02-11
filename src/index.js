@@ -31,8 +31,8 @@ ReactDOM.render(
         <Route exact path="/" component={App}>
           <Redirect to="/speld/posts" />
         </Route>
-        <Route path="/:category/posts" component={App} />
         <Route path="/:category/posts/:postId" component={OverviewPage} />
+        <Route path="/:category/posts" component={App} />
       </Switch>
     </BrowserRouter>
   </Provider>,

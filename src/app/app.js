@@ -10,6 +10,7 @@ class App extends Component {
 
   componentDidMount () {
     console.log(this.props.match.params.category, 'did mount');
+    this.props.setCategory(this.props.category);
     this.props.getPosts(this.props.category)
   }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
+import { connect } from 'react-redux';
 
 class PostGridItem extends Component {
 
@@ -28,4 +29,10 @@ class PostGridItem extends Component {
   }
 }
 
-export default PostGridItem;
+const mapStateToProps = (state) => {
+  return {
+    category: state.categories.currentCategory.category
+  }
+}
+
+export default connect(mapStateToProps)(PostGridItem);

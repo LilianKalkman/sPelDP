@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PostGridItem from '../post-grid-item/index';
-import { fetchPosts } from '../../store/actions/posts';
 
 class PostsGrid extends Component {
 
@@ -12,7 +11,7 @@ class PostsGrid extends Component {
         {
 
           this.props.posts.map( post => {
-            return <PostGridItem key={`${post.id}-${post.name}`} post={post} category={this.props.category}/>
+            return <PostGridItem key={`${post.id}-${post.name}`} post={post} />
           })
 
         }
@@ -26,15 +25,8 @@ class PostsGrid extends Component {
 const mapStateToProps = (state) => {
   return {
     posts: state.posts.filteredPosts,
-    category: state.categories.currentCategory
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getPosts: (category) => dispatch(fetchPosts(category))
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(PostsGrid);
+export default connect(mapStateToProps)(PostsGrid);
 
