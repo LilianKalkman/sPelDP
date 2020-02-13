@@ -1,9 +1,8 @@
-import { FILTER_POSTS, SET_POSTS, SET_CURRENT_POST } from '../actions/posts'
+import { FILTER_POSTS, SET_POSTS } from '../actions/posts'
 
 const initialState = {
   allPosts: [],
   filteredPosts: [],
-  currentPost: {},
 };
 
 const postsReducer = (state = initialState, action) => {
@@ -11,35 +10,22 @@ const postsReducer = (state = initialState, action) => {
 
     case FILTER_POSTS :
 
-      let filtered;
+      const filtered = state.allPosts.filter( post => {
+        return post.name.includes(action.query)
+      } );
 
-      if(!action.query.length){
-        filtered = state.allPosts;
-      } else {
-        filtered = state.allPosts.filter( post => {
-          return post.name.includes(action.query)
-        } );
-      }
+      let filterIds = [];
+      filtered.forEach( post => filterIds.push(post.id))
 
       return {
         ...state,
-        filteredPosts: filtered,
+        filteredPosts: filterIds,
       }
 
     case SET_POSTS :
 
       return {
-        allPosts: action.posts,
-        filteredPosts: action.posts,
-      }
-
-    case SET_CURRENT_POST :
-
-      const current = state.allPosts.find( post => post.id === parseInt(action.id));
-
-      return {
-        ...state,
-        currentPost: current,
+        allPosts: action.posts
       }
 
     default:

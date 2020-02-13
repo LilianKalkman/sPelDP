@@ -4,19 +4,11 @@ import { quotesData } from '../../../api/quotesData'
 
 export const FILTER_POSTS = 'FILTER_POSTS';
 export const SET_POSTS = 'SET_POSTS';
-export const SET_CURRENT_POST = 'SET_CURRENT_POST';
 
 export const filterPosts = (query) => {
   return {
     type: FILTER_POSTS,
     query: query
-  }
-}
-
-export const setCurrentPost = (postId) => {
-  return {
-    type: SET_CURRENT_POST,
-    id: postId
   }
 }
 
