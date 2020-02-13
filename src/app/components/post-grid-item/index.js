@@ -5,6 +5,10 @@ import { connect } from 'react-redux';
 
 class PostGridItem extends Component {
 
+  // componentDidMount () {
+  //   console.log(this.props)
+  // }
+
   render(){
     const imagePath = process.env.PUBLIC_URL + '/images/' + this.props.post.img;
     const imageStyle = {
@@ -13,7 +17,14 @@ class PostGridItem extends Component {
       backgroundSize: 'cover',
     }
 
-    const itemClasses = classNames('grid-item', `grid-item-${this.props.post.id}`)
+    let gridClass;
+    if(!this.props.filterIds){
+      gridClass = this.props.post.id;
+    } else {
+      gridClass = this.getGridClassname(this.props.post.id) + 1;
+    }
+
+    const itemClasses = classNames('grid-item', `grid-item-${gridClass}`)
 
     return (
       <Link to={`/${this.props.category}/posts/${this.props.post.id}`} className={itemClasses} style={imageStyle}>
@@ -27,11 +38,17 @@ class PostGridItem extends Component {
       </Link>
     )
   }
+
+  getGridClassname(id){
+    return this.props.filterIds.findIndex( i => i === id);
+  }
 }
 
 const mapStateToProps = (state) => {
   return {
-    category: state.categories.currentCategory.category
+    posts: state.posts.allPosts,
+    category: state.categories.currentCategory.category,
+    filterIds: state.posts.filteredPosts
   }
 }
 
