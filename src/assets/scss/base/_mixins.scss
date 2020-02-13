@@ -1,5 +1,18 @@
 //mixins
 
+@mixin back-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  color: $white;
+
+  &:hover {
+    background-color: $white-smoke;
+    cursor: pointer;
+  }
+}
+
 @mixin stripe-top {
   background: $gradient-green;
   width: 100%;

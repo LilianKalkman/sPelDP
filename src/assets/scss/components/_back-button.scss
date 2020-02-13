@@ -1,0 +1,34 @@
+.green {
+  .back-button {
+    @include back-button;
+    background: $gradient-green !important;
+    //
+    //&:hover {
+    //  color: $light-green;
+    //}
+  }
+}
+
+.orange {
+  .back-button {
+    @include back-button;
+    background: $gradient-orange !important;
+  }
+}
+
+.purple {
+  .back-button {
+    @include back-button;
+    background: $gradient-purple !important;
+  }
+}
+
+.back-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.back-button__icon {
+  width: 50%;
+  height: 50%;
+}

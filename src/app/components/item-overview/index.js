@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import BackButton from '../back-button';
 
 class ItemOverview extends Component {
 
@@ -11,8 +12,10 @@ class ItemOverview extends Component {
     return (
       <div className="item-overview__wrapper">
         <div className="item-overview">
+          <div>
+            <h1 className="item-overview__title">{post.name}</h1>
+          </div>
           <img src={imagePath} alt="" className="item-overview__img"/>
-          {/*<h1 className="item-overview__title">{post.name}</h1>*/}
           <div className="item-overview__content">
             {
               post.subtitle && <h2 className="item-overview__subtitle">{post.subtitle}</h2>
@@ -23,6 +26,8 @@ class ItemOverview extends Component {
             post.author && <div className="item-overview__author">{post.author}</div>
           }
         </div>
+
+        <BackButton />
       </div>
     )
   }

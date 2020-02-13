@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 
 class PostGridItem extends Component {
 
-  // componentDidMount () {
-  //   console.log(this.props)
-  // }
-
   render(){
     const imagePath = process.env.PUBLIC_URL + '/images/' + this.props.post.img;
     const imageStyle = {
