@@ -9,12 +9,15 @@ import { setCurrentCategory } from './store/actions/categories'
 class App extends Component {
 
   componentDidMount () {
-    this.props.getPosts(this.props.category);
+    if(!this.props.match.params.category.length){
+      this.props.getPosts(this.props.category);
+    } else {
+      this.switchCategory(this.props.match.params.category);
+    }
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      // console.log(this.props.match.params.category, 'did update');
       this.switchCategory(this.props.match.params.category);
     }
   }
