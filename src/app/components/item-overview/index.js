@@ -9,8 +9,20 @@ class ItemOverview extends Component {
     const imagePath = process.env.PUBLIC_URL + '/images/' + post.img;
 
     return (
-      <div className="item-overview">
-        <img src={imagePath} alt="" className="item-overview__img"/>
+      <div className="item-overview__wrapper">
+        <div className="item-overview">
+          <img src={imagePath} alt="" className="item-overview__img"/>
+          {/*<h1 className="item-overview__title">{post.name}</h1>*/}
+          <div className="item-overview__content">
+            {
+              post.subtitle && <h2 className="item-overview__subtitle">{post.subtitle}</h2>
+            }
+            <div className="item-overview__text">{post.text}</div>
+          </div>
+          {
+            post.author && <div className="item-overview__author">{post.author}</div>
+          }
+        </div>
       </div>
     )
   }
