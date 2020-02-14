@@ -2,10 +2,10 @@
   .back-button {
     @include back-button;
     background: $gradient-green !important;
-    //
-    //&:hover {
-    //  color: $light-green;
-    //}
+
+    &:hover {
+      color: $light-green;
+    }
   }
 }
 
@@ -13,6 +13,10 @@
   .back-button {
     @include back-button;
     background: $gradient-orange !important;
+
+    &:hover {
+      color: $medium-orange;
+    }
   }
 }
 
@@ -20,6 +24,10 @@
   .back-button {
     @include back-button;
     background: $gradient-purple !important;
+
+    &:hover {
+      color: $medium-purple;
+    }
   }
 }
 

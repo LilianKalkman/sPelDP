@@ -12,6 +12,7 @@ class ItemOverview extends Component {
     return (
       <div className="item-overview__wrapper">
         <div className="item-overview">
+          <BackButton />
           <div>
             <h1 className="item-overview__title">{post.name}</h1>
           </div>
@@ -26,8 +27,6 @@ class ItemOverview extends Component {
             post.author && <div className="item-overview__author">{post.author}</div>
           }
         </div>
-
-        <BackButton />
       </div>
     )
   }
