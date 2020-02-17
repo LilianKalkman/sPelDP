@@ -4,8 +4,27 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
     background-color: $white-smoke;
-}
 
+    @media only screen and (min-width: 1200px)  {
+        font-size: 18px;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px)  {
+        font-size: 14px;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        font-size: 12px;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        font-size: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 8px;
+    }
+}
 
 .purple {
     .header {
