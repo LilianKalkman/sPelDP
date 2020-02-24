@@ -1,6 +1,67 @@
 // general styling
 
 body {
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
     background-color: $white-smoke;
+}
+
+.purple {
+    .header {
+        background: $gradient-purple;
+
+        .active {
+            color: $dark-purple !important;
+        }
+    }
+
+    .grid-item--stripe {
+       background: $gradient-purple !important;
+    }
+
+    .grid-item:hover {
+        .grid-item--mask {
+            background: $gradient-purple !important;
+        }
+    }
+
+}
+
+.green {
+    .header {
+        background: $gradient-green;
+
+        .active {
+            color: $dark-green !important;
+        }
+    }
+
+    .grid-item--stripe {
+        background: $gradient-green !important;
+    }
+
+    .grid-item:hover {
+        .grid-item--mask {
+            background: $gradient-green !important;
+        }
+    }
+}
+
+.orange {
+    .header {
+        background: $gradient-orange;
+        .active {
+            color: $dark-orange !important;
+        }
+    }
+
+    .grid-item--stripe {
+        background: $gradient-orange !important;
+    }
+
+    .grid-item:hover {
+        .grid-item--mask {
+            background: $gradient-orange !important;
+        }
+    }
 }

@@ -3,21 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app/app';
 import * as serviceWorker from './serviceWorker';
-import { createStore, compose, combineReducers } from 'redux';
+import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import postsReducer from './app/store/reducers/posts';
-import usersReducer from './app/store/reducers/users'
+import usersReducer from './app/store/reducers/users';
+import categoriesReducer from './app/store/reducers/categories';
 
 const rootReducer = combineReducers({
   users: usersReducer,
-  posts: postsReducer
+  posts: postsReducer,
+  categories: categoriesReducer,
 });
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
-const store = createStore(rootReducer, composeEnhancers());
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 
 
 ReactDOM.render(
@@ -25,8 +28,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" component={App} />
-        <Route path="/posts" component={App} />
-        <Route path="/:postId" component={App} />
+        <Route path="/:category/posts" component={App} />
+        <Route path="/:category/posts/:postId" component={App} />
       </Switch>
     </BrowserRouter>
   </Provider>,
