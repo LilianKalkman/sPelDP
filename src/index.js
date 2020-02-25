@@ -8,15 +8,18 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import OverviewPage from './app/views/item-overview';
+import NotFound from './app/views/not-found';
 
 import postsReducer from './app/store/reducers/posts';
 import usersReducer from './app/store/reducers/users';
 import categoriesReducer from './app/store/reducers/categories';
+import martijnCategoriesReducer from './app/martijn/reducer'
 
 const rootReducer = combineReducers({
   users: usersReducer,
   posts: postsReducer,
   categories: categoriesReducer,
+  martijnCategories: martijnCategoriesReducer
 });
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
@@ -33,6 +36,7 @@ ReactDOM.render(
         </Route>
         <Route path="/:category/posts/:postId" component={OverviewPage} />
         <Route path="/:category/posts" component={App} />
+        <Route component={NotFound}/>
       </Switch>
     </BrowserRouter>
   </Provider>,
