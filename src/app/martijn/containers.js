@@ -24,3 +24,4 @@ export const withCategory = connect({
 2) selectors
 2b) library -> reselect = library voor selector hergebruik
  */
+
